@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.app__wrapper {
+  padding: 4rem 6rem;
+}
+.app__wrapper .wrapper__info h2 {
+  font-size: 70px;
+  margin-bottom: 2rem;
+}
+.app__wrapper .wrapper__info .wrapper__info--chefs-quote {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.app__wrapper .wrapper__info .wrapper__info--chefs-quote img {
+  height: 35px;
+  width: 40px;
+  margin-right: 1rem;
+}
+.app__wrapper .wrapper__info .wraper__info--chefs-signature {
+  width: 235px;
+  height: 80px;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .app__wrapper {
+    padding: 2rem 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .app__wrapper .wrapper__img--reverse {
+    margin-right: 0;
+  }
+  .app__wrapper .wrapper__info .wrapper__info--chefs-quote {
+    font-size: 24px;
+  }
+  .app__wrapper .wrapper__info .wrapper__info--chefs-quote img {
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=Chef.css.map */

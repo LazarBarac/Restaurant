@@ -1,0 +1,123 @@
+@import '../../main';
+
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4rem 6rem;
+    width: 100%;
+}
+
+.about-us__overlay{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    img{
+        width: 25%;
+        z-index: 0;
+    }
+}
+
+.about-us__content--about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-right: 3rem;
+    z-index: 2;
+    p{
+        font-family: $font-base;
+        color: $color-golden;
+        letter-spacing: 0.04em;
+        font-size: 40px;
+        margin: 2rem 0;
+    }
+    span{
+        color: $color-white;
+        font-size: 14px;
+        font-family: $font-alt;
+    };
+    img{
+        transform: rotate(180deg);
+    }
+}
+
+.about-us__content--history{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 3rem;
+    z-index: 2;
+    p{
+        font-family: $font-base;
+        color: $color-golden;
+        letter-spacing: 0.04em;
+        font-size: 40px;
+        margin: 2rem 0;
+    }
+
+    span{
+        color: $color-white;
+        font-size: 14px;
+        font-family: $font-alt;
+    }
+}
+
+.knife__img{
+    z-index: 1;
+    width: 84px;
+    height: 703px;
+}
+
+@media screen and (max-width: 1300px){
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+    .about-us__content--about{
+        align-items: center;
+        text-align: center;
+        margin: 1rem 0;
+        width: 80%;
+        p{
+            margin: 1rem 0;
+        }
+    }
+    .about-us__content--history{
+        align-items: center;
+        text-align: center;
+        margin: 1rem 0;
+        width: 80%;
+        p{
+            margin: 1rem 0;
+        }
+    }
+
+    .knife__img{
+        display: none;
+    }
+        
+}
+
+@media screen and (max-width: 1000px){
+    .about-us__content--about{
+        margin: 1rem 0;
+    }
+    .about-us__content--history{
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .about-us__overlay{
+        img{
+            width: 80%;
+            height: 320px;
+        }
+    }
+}

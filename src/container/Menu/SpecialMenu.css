@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.specialMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0C0C0C;
+  width: 100%;
+  padding: 4rem 6rem;
+}
+.specialMenu .specialMenu__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.specialMenu .specialMenu__title h2 {
+  font-size: 64px;
+  font-family: "Cormorant Upright", serif;
+  color: #DCCA87;
+}
+.specialMenu .specialMenu__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.specialMenu .specialMenu__menu h3 {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Cormorant Upright", serif;
+  color: #FFFFFF;
+  margin-bottom: 3rem;
+}
+.specialMenu .specialMenu__menu .specialMenu__menu--wines {
+  width: 40%;
+  margin-right: 2rem;
+}
+.specialMenu .specialMenu__menu .specialMenu__menu--coctails {
+  width: 40%;
+  margin-left: 2rem;
+}
+.specialMenu .specialMenu__menu .specialMenu__menu--img img {
+  width: 350px;
+  height: 540px;
+}
+
+@media screen and (max-width: 1300px) {
+  .specialMenu .specialMenu__menu {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .specialMenu .specialMenu__menu .specialMenu__menu--wines {
+    width: 45%;
+    margin-right: 0;
+  }
+  .specialMenu .specialMenu__menu .specialMenu__menu--coctails {
+    width: 45%;
+    margin-left: 0;
+  }
+  .specialMenu .specialMenu__menu .specialMenu__menu--img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .specialMenu .specialMenu__menu {
+    flex-direction: column;
+  }
+  .specialMenu .specialMenu__menu .specialMenu__menu--wines {
+    width: 90%;
+  }
+  .specialMenu .specialMenu__menu .specialMenu__menu--coctails {
+    width: 90%;
+  }
+}/*# sourceMappingURL=SpecialMenu.css.map */

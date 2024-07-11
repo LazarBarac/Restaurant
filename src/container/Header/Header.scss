@@ -1,0 +1,60 @@
+@import '../../main';
+
+.header{
+    background-color: $color-black;
+    padding: 4rem 6rem;
+    img{
+        width: 80%;
+    }
+}
+
+.header__h2{
+    font-family: $font-base;
+    color: $color-golden;
+    letter-spacing: 0.04em;
+    font-size: 90px;
+}
+
+.app__wrapper--info {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.app__wrapper--img {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 1300px){
+    .header{
+        padding: 1rem 2rem;
+    }
+    .app__wrapper--info{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .app__wrapper--img{
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .header__h2{
+        font-size: 70px;
+    } 
+}
+
+@media screen and (max-width: 700px){
+    .header__h2{
+        font-size: 65px;
+    }
+}

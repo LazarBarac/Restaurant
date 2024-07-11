@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.menuItem {
+  display: flex;
+  flex-direction: column;
+}
+.menuItem .menuItem--top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menuItem .menuItem--top .title {
+  width: 192px;
+  color: #DCCA87;
+}
+.menuItem .menuItem--top .line {
+  width: 119px;
+  height: 1px;
+  background-color: #545454;
+  margin: 0 2rem;
+}
+.menuItem .menuItem--top .price {
+  width: 35px;
+}
+.menuItem .menuItem--bottom {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .menuItem .menuItem--top .title {
+    margin-right: 1rem;
+  }
+  .menuItem .menuItem--top .line {
+    display: none;
+  }
+}/*# sourceMappingURL=MenuItem.css.map */

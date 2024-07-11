@@ -1,0 +1,49 @@
+@import '../../main';
+
+
+.app__wrapper{
+    padding: 4rem 6rem;
+    .wrapper__info{
+        h2{
+            font-size: 70px;
+            margin-bottom: 2rem;
+        }
+        .wrapper__info--chefs-quote{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 2rem;
+            img{
+                height: 35px;
+                width: 40px;
+                margin-right: 1rem;
+            }
+        }
+        .wraper__info--chefs-signature{
+            width: 235px;
+            height: 80px;
+            margin-top: 2rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+    .app__wrapper{
+        padding: 2rem 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .wrapper__img--reverse{
+            margin-right: 0;
+        }
+        .wrapper__info{
+            .wrapper__info--chefs-quote{
+                font-size: 24px;
+                img{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

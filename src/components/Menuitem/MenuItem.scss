@@ -1,0 +1,43 @@
+@import '../../main';
+
+.menuItem{
+    display: flex;
+    flex-direction: column;
+    
+    .menuItem--top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .title{
+            width: 192px;
+            color: $color-golden;
+        }
+        .line{
+            width: 119px;
+            height: 1px;
+            background-color: $color-gray;
+            margin: 0 2rem;
+        }
+        .price{
+            width: 35px;
+        }
+    }
+    .menuItem--bottom{
+            display: flex;
+            margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .menuItem{
+        .menuItem--top{
+            .title{
+                margin-right: 1rem;
+            }
+            .line{
+                display: none;
+            }
+        }
+    }
+}

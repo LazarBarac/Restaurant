@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 4rem 6rem;
+  width: 100%;
+}
+
+.about-us__overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+}
+.about-us__overlay img {
+  width: 25%;
+  z-index: 0;
+}
+
+.about-us__content--about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  margin-right: 3rem;
+  z-index: 2;
+}
+.about-us__content--about p {
+  font-family: "Cormorant Upright", serif;
+  color: #DCCA87;
+  letter-spacing: 0.04em;
+  font-size: 40px;
+  margin: 2rem 0;
+}
+.about-us__content--about span {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+.about-us__content--about img {
+  transform: rotate(180deg);
+}
+
+.about-us__content--history {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 3rem;
+  z-index: 2;
+}
+.about-us__content--history p {
+  font-family: "Cormorant Upright", serif;
+  color: #DCCA87;
+  letter-spacing: 0.04em;
+  font-size: 40px;
+  margin: 2rem 0;
+}
+.about-us__content--history span {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.knife__img {
+  z-index: 1;
+  width: 84px;
+  height: 703px;
+}
+
+@media screen and (max-width: 1300px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  .about-us__content--about {
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+    width: 80%;
+  }
+  .about-us__content--about p {
+    margin: 1rem 0;
+  }
+  .about-us__content--history {
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+    width: 80%;
+  }
+  .about-us__content--history p {
+    margin: 1rem 0;
+  }
+  .knife__img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about-us__content--about {
+    margin: 1rem 0;
+  }
+  .about-us__content--history {
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about-us__overlay img {
+    width: 80%;
+    height: 320px;
+  }
+}/*# sourceMappingURL=AboutUs.css.map */

@@ -1,0 +1,58 @@
+@import '../../main';
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 4rem;
+    border: 1px solid $color-golden;
+    background-color: $color-black;
+    z-index: 1;
+    .newsletter__heading{
+        width: 90%;
+        text-align: center;
+        text-wrap: wrap;
+    }
+    .newsletter__input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3rem;
+        width: 55%;
+        input{
+            width: 100%;
+            height: 2rem;
+            padding-left: 1rem;
+            border: 1px solid $color-golden;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: $font-base;
+            color: $color-white;
+            background-color: $color-black;
+            text-wrap: wrap;
+        }
+        button{
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+    .newsletter{
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width: 800px){
+    .newsletter{
+        .newsletter__input{
+            width: 100%;
+        }
+    }
+}
